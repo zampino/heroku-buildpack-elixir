@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-cat <<EOF
----
-addons:
-  heroku-postgresql:hobby-dev
-default_process_types:
-  web: elixir -pa _build/prod/consolidated -S mix server -p \$PORT
-EOF
